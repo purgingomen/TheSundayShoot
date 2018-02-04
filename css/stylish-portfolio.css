@@ -34,14 +34,15 @@ body {
 .btn-dark {
     border-radius: 0;
     color: #E3842D;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #E3842D;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.4);
+    
 }
 
 .btn-light {
@@ -154,7 +155,8 @@ hr.small {
     display: table;
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 600px;
+    max-height: 650px;
     background: url(../img/header.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -200,10 +202,27 @@ hr.small {
 
 .portfolio-item {
     margin-bottom: 30px;
+    position: relative;
+    z-index: 0;
+}
+
+.portfolio-item .inner-portfolio-content .podcaster-name {
+    display: inline-block;
+}
+.portfolio-item .inner-portfolio-content .podcaster-name {
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.portfolio-item .inner-portfolio-content {
+    position: relative;
+    z-index: 0;
 }
 
 .img-portfolio {
     margin: 0 auto;
+    position: relative;
+    z-index: 0;
 }
 
 .img-portfolio:hover {
