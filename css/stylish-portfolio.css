@@ -267,3 +267,11 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+
+a.soc-link {
+    color: #e3842d;
+}
+
+a.soc-link:hover {
+    color: #333;
+}
